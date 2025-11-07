@@ -1,11 +1,24 @@
-<script setup></script>
+<script setup>
+import SiteHeader from './components/SiteHeader.vue'
+import HomePage from './components/HomePage.vue'
+import SiteFooter from './components/SiteFooter.vue'
+</script>
 
 <template>
-  <h1>This is a test</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="app-shell">
+    <SiteHeader />
+    <HomePage />
+    <SiteFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app-shell {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1f36;
+  background: #eef1f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+</style>
